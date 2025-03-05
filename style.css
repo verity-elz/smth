@@ -3,26 +3,26 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #302e8b;
-    background-color: #FFFFFF;
+    color: #e78ebf;
+    background-color: #e6749a;
 }
 
 header {
-    background-color: #F8F8FF;
+    background-color: #e6749a;
     padding: 20px;
     text-align: center;
-    border-bottom: 4px solid #B0C4DE;
+    border-bottom: 4px solid #e78ebf;
 }
 
 section {
     padding: 20px;
     margin: 20px;
     background-color: rgba(248, 248, 255, 0.3);
-    border: 4px solid #B0C4DE;
+    border: 4px solid #e78ebf;
 }
 
 h1, h2, h3 {
-    color: #4682B4;
+    color: #e6749a;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -35,7 +35,7 @@ ul {
 li {
     margin-bottom: 10px;
     padding: 10px;
-    border: 2px solid #B0C4DE;
+    border: 2px solid #e78ebf;
     background-color: rgba(176, 196, 222, 0.1);
 }
 
@@ -44,27 +44,27 @@ form {
     flex-direction: column;
     background-color: #F8F8FF;
     padding: 20px;
-    border: 4px solid #B0C4DE;
+    border: 4px solid #e78ebf;
 }
 
 label {
     margin-bottom: 5px;
-    color: #4682B4;
+    color: #e78ebf;
 }
 
 input, textarea {
     margin-bottom: 10px;
     padding: 10px;
-    border: 2px solid #B0C4DE;
+    border: 2px solid #e78ebf;
     border-radius: 0;
     background-color: #FFFFFF;
-    color: #4682B4;
+    color: #e78ebf;
     font-family: 'Courier New', monospace;
 }
 
 button {
     padding: 10px;
-    background-color: #2E8B57;
+    background-color: #631d54;
     color: #FFFFFF;
     border: none;
     font-family: 'Press Start 2P', 'Courier New', monospace;
@@ -74,21 +74,21 @@ button {
 }
 
 button:hover {
-    background-color: #4682B4;
+    background-color: #e78ebf;
     transform: scale(1.05);
 }
 
 footer {
-    background-color: #F8F8FF;
+    background-color: #b44272;
     text-align: center;
     padding: 10px;
     width: 100%;
     bottom: 0;
-    border-top: 4px solid #B0C4DE;
+    border-top: 4px solid #ca77a5;
 }
 
 a {
-    color: #2E8B57;
+    color: #4e2243;
     text-decoration: none;
 }
 
