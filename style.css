@@ -1,28 +1,31 @@
+title {
+    color: silver;
+}
 body {
     font-family: 'Press Start 2P', 'Courier New', monospace;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #e78ebf;
-    background-color: #e6749a;
+    color: silver;
+    background-color:rgb(6, 6, 32);
 }
 
 header {
-    background-color: #e6749a;
+    background-color: rgb(6, 6, 32);
     padding: 20px;
     text-align: center;
-    border-bottom: 4px solid #e78ebf;
+    border-bottom: 4px solid #ffffff;
 }
 
 section {
     padding: 20px;
     margin: 20px;
     background-color: rgba(248, 248, 255, 0.3);
-    border: 4px solid #e78ebf;
+    border: 4px solid #ffffff;
 }
 
 h1, h2, h3 {
-    color: #e6749a;
+    color: silver;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -35,8 +38,8 @@ ul {
 li {
     margin-bottom: 10px;
     padding: 10px;
-    border: 2px solid #e78ebf;
-    background-color: rgba(176, 196, 222, 0.1);
+    border: 2px solid #ffffff;
+    background-color: rgb(14, 32, 56);
 }
 
 form {
@@ -44,27 +47,27 @@ form {
     flex-direction: column;
     background-color: #F8F8FF;
     padding: 20px;
-    border: 4px solid #e78ebf;
+    border: 4px solid rgb(14, 32, 56);
 }
 
 label {
     margin-bottom: 5px;
-    color: #e78ebf;
+    color: #ffffff;
 }
 
 input, textarea {
     margin-bottom: 10px;
     padding: 10px;
-    border: 2px solid #e78ebf;
+    border: 2px solid #ffffff;
     border-radius: 0;
     background-color: #FFFFFF;
-    color: #e78ebf;
+    color: silver;
     font-family: 'Courier New', monospace;
 }
 
 button {
     padding: 10px;
-    background-color: #631d54;
+    background-color: #0e0c2c;
     color: #FFFFFF;
     border: none;
     font-family: 'Press Start 2P', 'Courier New', monospace;
@@ -74,21 +77,21 @@ button {
 }
 
 button:hover {
-    background-color: #e78ebf;
+    background-color: #0f0724;
     transform: scale(1.05);
 }
 
 footer {
-    background-color: #b44272;
+    background-color: rgb(6, 6, 32);
     text-align: center;
     padding: 10px;
     width: 100%;
     bottom: 0;
-    border-top: 4px solid #ca77a5;
+    border-top: 4px solid #ffffff;
 }
 
 a {
-    color: #4e2243;
+    color: silver;
     text-decoration: none;
 }
 
