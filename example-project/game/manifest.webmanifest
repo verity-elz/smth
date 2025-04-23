@@ -1,9 +1,9 @@
 {
-  "name": "Rabid Touch",
-  "short_name": "Rabid Touch",
+  "name": "Tame Creator",
+  "short_name": "Tame Creator",
   "id": "com.example.gamename",
   "description": "",
-  "orientation": "portrait",
+  "orientation": "landscape",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "black",
