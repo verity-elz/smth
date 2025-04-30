@@ -12,8 +12,12 @@ gdjs.SceneCode.GDStar2Objects1= [];
 gdjs.SceneCode.GDStar2Objects2= [];
 gdjs.SceneCode.GDScore2Objects1= [];
 gdjs.SceneCode.GDScore2Objects2= [];
+gdjs.SceneCode.GDNewSpriteObjects1= [];
+gdjs.SceneCode.GDNewSpriteObjects2= [];
 
 
+gdjs.SceneCode.mapOfGDgdjs_9546SceneCode_9546GDStar1Objects1ObjectsGDgdjs_9546SceneCode_9546GDStar3Objects1ObjectsGDgdjs_9546SceneCode_9546GDStar2Objects1Objects = Hashtable.newFrom({"Star1": gdjs.SceneCode.GDStar1Objects1, "Star3": gdjs.SceneCode.GDStar3Objects1, "Star2": gdjs.SceneCode.GDStar2Objects1});
+gdjs.SceneCode.mapOfGDgdjs_9546SceneCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.SceneCode.GDPlayerObjects1});
 gdjs.SceneCode.mapOfGDgdjs_9546SceneCode_9546GDStar1Objects1ObjectsGDgdjs_9546SceneCode_9546GDStar3Objects1ObjectsGDgdjs_9546SceneCode_9546GDStar2Objects1Objects = Hashtable.newFrom({"Star1": gdjs.SceneCode.GDStar1Objects1, "Star3": gdjs.SceneCode.GDStar3Objects1, "Star2": gdjs.SceneCode.GDStar2Objects1});
 gdjs.SceneCode.mapOfGDgdjs_9546SceneCode_9546GDStar1Objects1ObjectsGDgdjs_9546SceneCode_9546GDStar3Objects1ObjectsGDgdjs_9546SceneCode_9546GDStar2Objects1Objects = Hashtable.newFrom({"Star1": gdjs.SceneCode.GDStar1Objects1, "Star3": gdjs.SceneCode.GDStar3Objects1, "Star2": gdjs.SceneCode.GDStar2Objects1});
 gdjs.SceneCode.mapOfGDgdjs_9546SceneCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.SceneCode.GDPlayerObjects1});
@@ -59,7 +63,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "fate");
-}{gdjs.evtTools.sound.playMusic(runtimeScene, "【ALIEN STAGE】Black Sorrow - english cover │ @auri_vt.mp3", false, 100, 1);
+}{gdjs.evtTools.sound.playMusic(runtimeScene, "Black Sorrow _ Alien Stage.mp3", false, 5, 1);
 }}
 
 }
@@ -79,7 +83,7 @@ gdjs.SceneCode.GDStar2Objects1.length = 0;
 gdjs.SceneCode.GDStar3Objects1.length = 0;
 
 {gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "fate");
-}{gdjs.evtTools.object.createObjectFromGroupOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.SceneCode.mapOfGDgdjs_9546SceneCode_9546GDStar1Objects1ObjectsGDgdjs_9546SceneCode_9546GDStar3Objects1ObjectsGDgdjs_9546SceneCode_9546GDStar2Objects1Objects, "Star" + gdjs.evtTools.common.toString(gdjs.randomInRange(1, 3)), gdjs.randomInRange(0, gdjs.evtTools.window.getWindowInnerWidth()), 0, "");
+}{gdjs.evtTools.object.createObjectFromGroupOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.SceneCode.mapOfGDgdjs_9546SceneCode_9546GDStar1Objects1ObjectsGDgdjs_9546SceneCode_9546GDStar3Objects1ObjectsGDgdjs_9546SceneCode_9546GDStar2Objects1Objects, "Star" + gdjs.evtTools.common.toString(gdjs.randomInRange(1, 3)), gdjs.randomInRange(0, (1200)), 0, "");
 }{for(var i = 0, len = gdjs.SceneCode.GDStar1Objects1.length ;i < len;++i) {
     gdjs.SceneCode.GDStar1Objects1[i].addForce(0, 150, 1);
 }
@@ -96,6 +100,7 @@ for(var i = 0, len = gdjs.SceneCode.GDStar2Objects1.length ;i < len;++i) {
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.SceneCode.GDPlayerObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Star1"), gdjs.SceneCode.GDStar1Objects1);
 gdjs.copyArray(runtimeScene.getObjects("Star2"), gdjs.SceneCode.GDStar2Objects1);
 gdjs.copyArray(runtimeScene.getObjects("Star3"), gdjs.SceneCode.GDStar3Objects1);
@@ -126,6 +131,10 @@ for (var i = 0, k = 0, l = gdjs.SceneCode.GDStar2Objects1.length;i<l;++i) {
     }
 }
 gdjs.SceneCode.GDStar2Objects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SceneCode.mapOfGDgdjs_9546SceneCode_9546GDPlayerObjects1Objects, gdjs.SceneCode.mapOfGDgdjs_9546SceneCode_9546GDStar1Objects1ObjectsGDgdjs_9546SceneCode_9546GDStar3Objects1ObjectsGDgdjs_9546SceneCode_9546GDStar2Objects1Objects, true, runtimeScene, false);
+}
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "game over", false);
 }}
@@ -193,6 +202,8 @@ gdjs.SceneCode.GDStar2Objects1.length = 0;
 gdjs.SceneCode.GDStar2Objects2.length = 0;
 gdjs.SceneCode.GDScore2Objects1.length = 0;
 gdjs.SceneCode.GDScore2Objects2.length = 0;
+gdjs.SceneCode.GDNewSpriteObjects1.length = 0;
+gdjs.SceneCode.GDNewSpriteObjects2.length = 0;
 
 gdjs.SceneCode.eventsList0(runtimeScene);
 gdjs.SceneCode.GDBackgroundObjects1.length = 0;
@@ -207,6 +218,8 @@ gdjs.SceneCode.GDStar2Objects1.length = 0;
 gdjs.SceneCode.GDStar2Objects2.length = 0;
 gdjs.SceneCode.GDScore2Objects1.length = 0;
 gdjs.SceneCode.GDScore2Objects2.length = 0;
+gdjs.SceneCode.GDNewSpriteObjects1.length = 0;
+gdjs.SceneCode.GDNewSpriteObjects2.length = 0;
 
 
 return;
